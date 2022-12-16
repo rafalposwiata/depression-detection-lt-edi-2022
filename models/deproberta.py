@@ -1,5 +1,5 @@
 import os
-from models.models_config import get_lm_pretraining_args
+from config import get_lm_pretraining_args
 from simpletransformers.language_modeling import LanguageModelingModel
 import logging
 

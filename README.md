@@ -10,8 +10,7 @@ If you use the code, models or datasets from this repository, please cite:
 ```
 @inproceedings{poswiata-perelkiewicz-2022-opi,
     title = "{OPI}@{LT}-{EDI}-{ACL}2022: Detecting Signs of Depression from Social Media Text using {R}o{BERT}a Pre-trained Language Models",
-    author = "Po{\'s}wiata, Rafa{\l}  and
-      Pere{\l}kiewicz, Micha{\l}",
+    author = "Po{\'s}wiata, Rafa{\l} and Pere{\l}kiewicz, Micha{\l}",
     booktitle = "Proceedings of the Second Workshop on Language Technology for Equality, Diversity and Inclusion",
     month = may,
     year = "2022",
@@ -25,7 +24,7 @@ If you use the code, models or datasets from this repository, please cite:
 
 ## Task description
 
-The task was to create a system that, given social media posts in English, should detect the level of depression as **‘not depressed’**, **‘moderately depressed’** or **‘severely depressed’.**
+The task was to create a system that, given social media posts in English, should detect the level of depression as **‘not depressed’**, **‘moderately depressed’** or **‘severely depressed’**.
 
 ## Requirements
 
@@ -59,12 +58,12 @@ of **396,968** posts. Files are available in the [./data/reddit_depression_corpo
 ### DepRoBERTa
 
 **DepRoBERTa (RoBERTa for Depression Detection)** - language model based on RoBERTa-large and further pre-trained on the
-Reddit Depression Corpora. Model available at huggingface-hub:
+Reddit Depression Corpora.
 
-```
-rafalposwiata/deproberta-large-v1
-```
+[rafalposwiata/deproberta-large-v1](https://huggingface.co/rafalposwiata/deproberta-large-v1)
 
 ### Models for detecting depression
 
-TODO
+[rafalposwiata/roberta-large-depression](https://huggingface.co/rafalposwiata/roberta-large-depression)
+
+[rafalposwiata/deproberta-large-depression](https://huggingface.co/rafalposwiata/deproberta-large-depression)

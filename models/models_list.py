@@ -15,6 +15,9 @@ class ModelInfo:
     def description(self):
         return f'{self.model_type}\t{self.model_name}\t{self.model_version}'
 
+    def simple_name(self):
+        return self.model_name.replace('/', '_')
+
 
 models_options = {
     'basic': [
@@ -29,8 +32,8 @@ models_options = {
         ModelInfo('roberta', 'rafalposwiata/deproberta-large-v1')
     ],
     'best': [
-        ModelInfo('roberta', 'roberta-large', model_version='v2'),
-        ModelInfo('roberta', 'DepRoBERTa', model_version='v2')
+        ModelInfo('roberta', 'rafalposwiata/roberta-large-depression'),
+        ModelInfo('roberta', 'rafalposwiata/deproberta-large-depression')
     ]
 }
 

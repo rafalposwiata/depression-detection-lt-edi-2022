@@ -8,13 +8,13 @@ labels = ['severe', 'moderate', 'not depression']
 text_column_names = {
     "dev": "Text data",
     "train": "Text_data",
-    "test_data": "text data"
+    "test": "text data"
 }
 
 pid_column_names = {
     "dev": "PID",
     "train": "PID",
-    "test_data": "Pid"
+    "test": "Pid"
 }
 
 

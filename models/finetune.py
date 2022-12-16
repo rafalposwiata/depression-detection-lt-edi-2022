@@ -5,7 +5,7 @@ from transformers_models import MODEL_CLASSES
 from simpletransformers.classification import ClassificationModel
 from dataset.utils import get_preprocessed_data, labels
 from models_list import get_models
-from models_config import get_fine_tuning_args, global_config
+from config import get_fine_tuning_args, global_config
 
 
 def fine_tune():
