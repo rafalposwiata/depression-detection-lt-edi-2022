@@ -38,8 +38,8 @@ The task was to create a system that, given social media posts in English, shoul
 ## Prepared datasets
 
 We prepared two datasets. The first is a preprocessed dataset provided by the competition organizers.
-The second (Reddit Depression Corpora) was used to train the DepRoBERTa language model.
-
+The second, Reddit Depression Corpora, was used to train the DepRoBERTa language model.
+ 
 ### Preprocessed competition dataset
 
 Dataset was prepared by removing duplicates and transfer some examples from the dev set to the train set.
@@ -51,7 +51,7 @@ We built a corpus based on **[the Reddit Mental Health Dataset](https://zenodo.o
 (Low et al., 2020) and a [dataset](https://www.kaggle.com/datasets/xavrig/reddit-dataset-rdepression-and-rsuicidewatch)
 of **20,000** posts from **r/depression** and **r/SuicideWatch** subreddits. We filtered the data appropriately, leaving
 mainly those related to **depression (31,2%)**, **anxiety (20,5%)** and **suicide (18.1%)**, which resulted in a corpora consisting
-of **396,968** posts. Files are available in the [./data/reddit_depression_corpora](data/reddit_depression_corpora) folder.
+of **396,968** posts.
 
 ## Trained models
 
