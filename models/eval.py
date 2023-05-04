@@ -37,7 +37,7 @@ class ResultAggregator:
 
 
 def eval_model(model_info, model_args):
-    eval_data = get_preprocessed_data(split_type)
+    eval_data = get_preprocessed_data(data_split)
 
     best_checkpoint = find_best_checkpoint(model_args.output_dir)
     if best_checkpoint is None:
@@ -69,7 +69,7 @@ def print_results():
 
 if __name__ == '__main__':
     results = []
-    split_type = 'dev'
+    data_split = 'dev'
 
     for model_info in get_models('basic') + get_models('DepRoBERTa'):
         agg = ResultAggregator(model_info.model_name)
