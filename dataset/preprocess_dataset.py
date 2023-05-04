@@ -10,7 +10,7 @@ dev_probability = {
 }
 
 
-def preprocess():
+def preprocess(with_test=False):
     train = get_data('train')
     statistics('train', train)
 
@@ -41,6 +41,11 @@ def preprocess():
     dev = pd.DataFrame(dev_dataset, columns=['pid', 'text', 'labels'])
     print_stats('Dev after preprocessing', dev)
     dev.to_csv('../data/preprocessed_dataset/dev.csv', index=False)
+
+    if with_test:
+        test = get_data('test')
+        statistics('test', test)
+        test.to_csv('../data/preprocessed_dataset/test.csv', index=False)
 
 
 def statistics(data_split, dataset):

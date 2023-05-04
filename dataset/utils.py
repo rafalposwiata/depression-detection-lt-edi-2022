@@ -17,13 +17,19 @@ pid_column_names = {
     "test": "Pid"
 }
 
+label_column_names = {
+    "dev": "Label",
+    "train": "Label",
+    "test": "Class labels"
+}
+
 
 def get_data(data_split, use_shuffle=False, without_label=False):
     df = pd.read_csv(f'../data/original_dataset/{data_split}.tsv', sep='\t', header=0)
 
     pid_column = pid_column_names.get(data_split)
     text_column = text_column_names.get(data_split)
-    label_column = "Label"
+    label_column = label_column_names.get(data_split)
     if without_label:
         df = df[[pid_column, text_column]]
         df.columns = ["pid", "text"]
