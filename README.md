@@ -68,7 +68,7 @@ If you use the code, models or datasets from this repository, please cite:
     pages = "276--282",
 }
 ```
-If you use competition dataset or preprocessed version, please also cite the below papers:
+If you use original competition dataset or preprocessed version, please also cite the below papers:
 
 ```bib
 @inproceedings{10.1007/978-3-031-16364-7_11,
